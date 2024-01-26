@@ -40,7 +40,7 @@ class IMDB(Request):
         self.headers = {
             'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36'}
 
-        self.xpaths = {"seasons": "//li[@class='ipc-tab ipc-tab--on-base']",
+        self.xpaths = {"seasons": "//ul[@class='ipc-tabs ipc-tabs--base ipc-tabs--align-left']/a",
                        "episodes": "//div[@class='sc-9115db22-4 kyIRYf']",
                        "show_title": "//h2[@data-testid]/text()",
                        "show_image": "//div[@class='sc-a885edd8-5 dZeWWh']//img[@class='ipc-image']//@src",
